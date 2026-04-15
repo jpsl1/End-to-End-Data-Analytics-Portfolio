@@ -59,7 +59,7 @@ The second phase applies the same analytical framework to a larger and more stru
 
 ---
 
-**Comaprison of model performance matrics:**
+**Comparison of model performance matrics:**
 | Metric | Phase 1 | Phase 2 |
 |--------|---------|---------|
 | AUC | 0.857 | 0.957 | 
