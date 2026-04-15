@@ -74,10 +74,10 @@ The second phase applies the same analytical framework to a larger and more stru
 ## Datasets
  
 **Phase 1:** [Loan Approval Dataset — Kaggle](https://www.kaggle.com/datasets/burak3ergun/loan-data-set/data)
-614 loan applications with demographic and financial features including Credit_History, ApplicantIncome, LoanAmount, and Loan_Status.
+614 loan applications with demographic and financial features.
  
 **Phase 2:** [Loan Approval Classification Data — Kaggle](https://www.kaggle.com/datasets/taweilo/loan-approval-classification-data/data)
-45,000 loan applications with richer features including credit_score, previous_loan_defaults_on_file, loan_intent, and person_home_ownership.
+45,000 loan applications with richer features.
  
 ## Running the Notebooks
 
