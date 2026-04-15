@@ -1,4 +1,4 @@
-# End to End Data Analytics Portfolio
+# End-to-End Data Analytics Portfolio
 
 A two-phase portfolio project demonstrating end-to-end data analytics skills including data quality assessment, feature engineering, statistical modelling, independent validation, and structured documentation. The project applies a consistent analytical methodology across two datasets of different sizes and complexity, reflecting real-world data challenges.
 
