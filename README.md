@@ -1,4 +1,4 @@
-# End-to-End-Data-Analytics-Portfolio
+# End to End Data Analytics Portfolio
 
 A two-phase portfolio project demonstrating end-to-end data analytics skills including data quality assessment, feature engineering, statistical modelling, independent validation, and structured documentation. The project applies a consistent analytical methodology across two datasets of different sizes and complexity, reflecting real-world data challenges.
 
@@ -25,7 +25,7 @@ validation.ipynb
 
 ## Overview
 
-### Phase 1 — Model Development and Validation (614 observations)
+### Phase 1 - Model Development and Validation (614 observations)
 The first phase establishes the methodology on a smaller dataset. The goal is to build an interpretable model, document all analytical decisions rigorously, and validate results independently.
 
 **Key steps:**
@@ -43,7 +43,7 @@ The first phase establishes the methodology on a smaller dataset. The goal is to
 - Model well-calibrated at extremes; intermediate predictions less stable due to small dataset size
 
 
-### Phase 2 — Model Development and Validation (45,000 observations)
+### Phase 2 - Model Development and Validation (45,000 observations)
 The second phase tests whether the methodology from Phase 1 generalises to a larger and richer dataset, with improved feature set and additional data quality considerations.
 
 **Key steps:**
