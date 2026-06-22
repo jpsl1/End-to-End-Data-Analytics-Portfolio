@@ -1,6 +1,6 @@
 # End-to-End Data Analytics Portfolio
 
-A two-phase data analytics project demonstrating end-to-end analytical workflows, including data quality assessment, feature engineering, statistical modelling, independent validation, and structured documentation. The project applies a consistent analytical framework across datasets of varying size and complexity, illustrating how data structure, quality, and scale influence analytical outcomes and decision reliability. The datasets are publicly available and are used to simulate common challenges encountered in real-world data analysis, such as missing values, skewed distributions, and dependency on individual variables.
+A two-phase data analytics project demonstrating end-to-end analytical workflows, including data quality assessment, feature engineering, statistical modelling, independent validation, and structured documentation. The project applies a consistent analytical framework across datasets of varying size and complexity, illustrating how data structure, quality, and scale influence analytical outcomes and decision reliability. The datasets are publicly available and contain common challenges encountered in real-world data analysis, such as missing values, skewed distributions, and dependency on individual variables.
 
 ---
 
@@ -42,6 +42,17 @@ The first phase establishes the methodology on a smaller dataset. The goal is to
 - Imputation method validated as robust through sensitivity analysis
 - Results are reliable for clearly low- and high-risk cases, while intermediate cases show higher uncertainty due to limited data
 
+**Validation results:**
+| Metric | Result |
+|--------|--------|
+| AUC | 0.854 |
+| Gini | 0.708 |
+| KS Statistic | 0.610 |
+| Brier Score | 0.122 |
+| PSI (Train vs Test) | 0.065 |
+
+---
+
 ### Phase 2 - Model Development and Validation (45,000 observations)
 The second phase applies the same analytical framework to a larger and more structured dataset, allowing comparison of how increased data volume and improved feature availability impact stability, interpretability, and decision confidence.
 
@@ -57,17 +68,26 @@ The second phase applies the same analytical framework to a larger and more stru
 - Increased dataset size improves stability of results and reduces sensitivity to individual variables, leading to more reliable decision support
 - High-risk segments consistently account for a disproportionate share of expected loss, demonstrating how data can support prioritisation in decision-making
 
+**Validation results:**
+| Metric | Result |
+|--------|--------|
+| AUC | 0.957 |
+| Gini | 0.914 |
+| KS Statistic | 0.770 |
+| Brier Score | 0.070 |
+| PSI (Train vs Test) | 0.015 |
+
 ---
 
-**Comparison of model performance matrics:**
+**Comparison of model performance metrics:**
 | Metric | Phase 1 | Phase 2 |
 |--------|---------|---------|
 | AUC | 0.857 | 0.957 | 
 | Accuracy | 0.854 | 0.902 |
 | F1 score | 0.903 | 0.775 |
-| Low Risk Approved (%) | 100 | 98.1 |
-| Medium Risk Approved (%) | 82.5 | 72.4 |
-| High Risk Approved (%) | 4.6 | 6.7 |
+| Low Risk (%) | 100 | 98.1 |
+| Medium Risk (%) | 82.5 | 72.4 |
+| High Risk (%) | 4.6 | 6.7 |
 
 ---
 
@@ -100,7 +120,7 @@ The notebooks are pre-run with all outputs saved. Charts and results are visible
 - The datasets are publicly available and not suitable for production deployment
 - No macroeconomic factors or external stress scenarios are included
 - The near-perfect performance of the Phase 2 tree-based model reflects dataset characteristics rather than real-world predictive power
-- The datasets simulate structural limitations common in real-world data, including missing values, skewed distributions, and reliance on proxy variables
+- The datasets reflect structural limitations common in real-world data, including missing values, skewed distributions, and reliance on proxy variables
 - Analytical results are sensitive to data quality and feature availability
 - Smaller datasets lead to increased uncertainty, particularly in intermediate predictions
 - Larger datasets improve stability but may still contain hidden biases or unobserved dependencies
