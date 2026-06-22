@@ -91,6 +91,19 @@ The second phase applies the same analytical framework to a larger and more stru
 
 ---
 
+## Key Limitations
+
+- The datasets are publicly available and not suitable for production deployment
+- No macroeconomic factors or external stress scenarios are included
+- The near-perfect performance of the Phase 2 tree-based model reflects dataset characteristics rather than real-world predictive power
+- The datasets reflect structural limitations common in real-world data, including missing values, skewed distributions, and reliance on proxy variables
+- Analytical results are sensitive to data quality and feature availability
+- Smaller datasets lead to increased uncertainty, particularly in intermediate predictions
+- Larger datasets improve stability but may still contain hidden biases or unobserved dependencies
+- The analysis is observational — it identifies patterns and associations, not causal relationships
+
+---
+
 ## Datasets
  
 **Phase 1:** [Loan Approval Dataset — Kaggle](https://www.kaggle.com/datasets/burak3ergun/loan-data-set/data)
@@ -112,26 +125,8 @@ Data files are not included in this repository. To run the notebooks locally:
 **Phase 2 data:** Place "loan_data.csv" in your chosen directory and update paths in all Phase 2 notebooks accordingly.
 
 The notebooks are pre-run with all outputs saved. Charts and results are visible without running the code.
- 
----
-
-## Key Limitations
-
-- The datasets are publicly available and not suitable for production deployment
-- No macroeconomic factors or external stress scenarios are included
-- The near-perfect performance of the Phase 2 tree-based model reflects dataset characteristics rather than real-world predictive power
-- The datasets reflect structural limitations common in real-world data, including missing values, skewed distributions, and reliance on proxy variables
-- Analytical results are sensitive to data quality and feature availability
-- Smaller datasets lead to increased uncertainty, particularly in intermediate predictions
-- Larger datasets improve stability but may still contain hidden biases or unobserved dependencies
-- The analysis is observational — it identifies patterns and associations, not causal relationships
 
 ---
 
 ## Technical Stack
 Python 3.10 - pandas, numpy, scipy, scikit-learn, XGBoost, matplotlib, seaborn, joblib
-
----
-
-## Running the Notebooks
-Data files are not included. Download datasets from Kaggle, update file paths in notebooks, and install dependencies via pip install -r requirements.txt. Notebooks are pre-run with all outputs saved.
