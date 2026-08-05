@@ -1,8 +1,8 @@
 # End-to-End Data Analytics Portfolio + 4 PL model for lab automation.
 
-A two-phase data analytics project demonstrating end-to-end analytical workflows, including data quality assessment, feature engineering, statistical modelling, independent validation, and structured documentation. The project applies a consistent analytical framework across datasets of varying size and complexity, illustrating how data structure, quality, and scale influence analytical outcomes and decision reliability. The datasets are publicly available and contain common challenges encountered in real-world data analysis, such as missing values, skewed distributions, and dependency on individual variables.
+A two-phase data analytics project demonstrating end-to-end analytical workflows, including data quality assessment, feature engineering, statistical modelling, independent validation, and structured documentation. The project applies a consistent analytical framework across datasets of varying size and complexity, illustrating how data structure, quality, and scale influence analytical outcomes and decision-making. The datasets are publicly available and contain common real-world challenges such as missing values, skewed distributions, and variable dependency.
 
-I have also included a work that contains a 4PL model I have created for lab automation.
+The repository also includes a Python-based laboratory automation project that implements a four-parameter logistic (4PL) model for quantitative ELISA analysis. The workflow automates calibration curve fitting, sample concentration calculations, assay quality evaluation, and result visualization, demonstrating the application of Python to improve laboratory data analysis and reproducibility.
 
 ---
 
