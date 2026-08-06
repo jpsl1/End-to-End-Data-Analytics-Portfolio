@@ -22,7 +22,7 @@ notebook1_eda_transformation.ipynb
 notebook2_modeling_and_risk_analysis.ipynb
 validation.ipynb
 ```
-
+Laboratory automation – Python workflow for quantitative ELISA analysis using a 4PL model
 ---
 
 ## Overview
