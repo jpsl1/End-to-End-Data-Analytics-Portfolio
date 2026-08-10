@@ -36,7 +36,7 @@ lab_automation_4pl.py
 **Laboratory automation/** — Python notebook and command-line script for quantitative ELISA analysis using a 4PL model.
 
 - `4PL_model_for_Automated_ELISA_Analysis.ipynb` — interactive notebook demonstrating the full workflow with simulated data
-- `lab_automation_4p.py` — command-line script that accepts Excel instrument output directly and exports results to CSV
+- `lab_automation_4pl.py` — command-line script that accepts Excel instrument output directly and exports results to CSV
 
 ## Overview of End-to-End Data Analytics Notebook
 
