@@ -10,6 +10,11 @@ The repository also includes a Python-based laboratory automation project that i
 ## Project Structure
 
 ```
+4PL model/
+
+4PL_model_for_Automated_ELISA_Analysis.ipynb
+lab_automation_4pl.py
+
 phase1/
 
 notebook1_data_quality_and_cleaning.ipynb
@@ -23,20 +28,16 @@ notebook1_eda_transformation.ipynb
 notebook2_modeling_and_risk_analysis.ipynb
 validation.ipynb
 
-4PL model/
-4PL_model_for_Automated_ELISA_Analysis.ipynb
-lab_automation_4pl.py
-
 ```
 
 ---
 
-## Overview 4PL model for Automated ELISA Analysis
+## 4PL model for Automated ELISA Analysis
 
-**Laboratory automation/** — Python notebook and command-line script for quantitative ELISA analysis using a 4PL model.
+**Laboratory automation/** — Python notebook and command-line script for quantitative ELISA analysis using a four-parameter logistic (4PL) model. The workflow evaluates the calibration curve by assessing the fitted parameters, curve fit, and coefficient of determination ($R^2$).
 
-- `4PL_model_for_Automated_ELISA_Analysis.ipynb` — interactive notebook demonstrating the full workflow with simulated data
-- `lab_automation_4pl.py` — command-line script that accepts Excel instrument output directly and exports results to CSV
+- `4PL_model_for_Automated_ELISA_Analysis.ipynb` — interactive notebook demonstrating the full workflow with simulated data.
+- `lab_automation_4pl.py` — Python script that processes Excel-based ELISA plate output and exports calculated concentrations to CSV.
 
 ## Overview of End-to-End Data Analytics Notebook
 
