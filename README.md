@@ -35,8 +35,8 @@ lab_automation_4pl.py
 
 **Laboratory automation/** — Python notebook and command-line script for quantitative ELISA analysis using a 4PL model.
 
-- `4PL_model_for_lab_automation.ipynb` — interactive notebook demonstrating the full workflow with simulated data
-- `elisa_4pl_analysis.py` — command-line script that accepts Excel instrument output directly and exports results to CSV
+- `4PL_model_for_Automated_ELISA_Analysis.ipynb` — interactive notebook demonstrating the full workflow with simulated data
+- `lab_automation_4p.py` — command-line script that accepts Excel instrument output directly and exports results to CSV
 
 ## Overview of End-to-End Data Analytics Notebook
 
@@ -144,4 +144,4 @@ The notebooks are pre-run with all outputs saved. Charts and results are visible
 ---
 
 ## Technical Stack
-Python 3.10 - pandas, numpy, scipy, scikit-learn, XGBoost, matplotlib, seaborn, joblib, re, argparse, pathlib
+Python 3.10 - pandas, numpy, scipy, scikit-learn, XGBoost, matplotlib, seaborn, joblib, (standard library: re, argparse, pathlib).
