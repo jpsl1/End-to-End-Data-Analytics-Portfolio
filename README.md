@@ -23,15 +23,22 @@ notebook1_eda_transformation.ipynb
 notebook2_modeling_and_risk_analysis.ipynb
 validation.ipynb
 
-Laboratory automation/
-
-Python workflow for quantitative ELISA analysis using a 4PL model
+4PL model/
+4PL_model_for_Automated_ELISA_Analysis.ipynb
+lab_automation_4pl.py
 
 ```
 
 ---
 
-## Overview
+## Overview 4PL model for Automated ELISA Anaalysis
+
+**Laboratory automation/** — Python notebook and command-line script for quantitative ELISA analysis using a 4PL model.
+
+- `4PL_model_for_lab_automation.ipynb` — interactive notebook demonstrating the full workflow with simulated data
+- `elisa_4pl_analysis.py` — command-line script that accepts Excel instrument output directly and exports results to CSV
+
+## Overview of End-to-End Data Analytics Notebook
 
 ### Phase 1 - Model Development and Validation (614 observations)
 The first phase establishes the methodology on a smaller dataset. The goal is to build an interpretable model, document all analytical decisions rigorously, and validate results independently. The goal is not only to build a model, but to understand how data quality and structure affect conclusions and decision-making reliability.
@@ -137,4 +144,4 @@ The notebooks are pre-run with all outputs saved. Charts and results are visible
 ---
 
 ## Technical Stack
-Python 3.10 - pandas, numpy, scipy, scikit-learn, XGBoost, matplotlib, seaborn, joblib
+Python 3.10 - pandas, numpy, scipy, scikit-learn, XGBoost, matplotlib, seaborn, joblib, re, argparse, pathlib
