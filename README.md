@@ -31,7 +31,7 @@ lab_automation_4pl.py
 
 ---
 
-## Overview 4PL model for Automated ELISA Anaalysis
+## Overview 4PL model for Automated ELISA Analysis
 
 **Laboratory automation/** — Python notebook and command-line script for quantitative ELISA analysis using a 4PL model.
 
