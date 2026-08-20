@@ -79,11 +79,11 @@ Three samples are flagged outside the calibration range: two wells with OD readi
 
 The corresponding results table includes each sample's parsed name, timepoint, dilution factor, measured OD, and calculated concentration in both ng/mL and µg/mL, alongside the standard curve's own back-calculated recovery values for validation.
 
-**Calibration Curve**/
+**Calibration Curve**
 
 <img width="790" height="489" alt="image" src="https://github.com/user-attachments/assets/2706fcc5-38c0-4323-9259-1dea8818d432" />
 
-**QC Raport from Notebook**/
+**QC Raport from Notebook**
 
 <img width="550" height="239" alt="image" src="https://github.com/user-attachments/assets/41d51024-a111-4e32-9728-c8c2648de1d8" />
 
