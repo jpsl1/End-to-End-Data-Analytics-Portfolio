@@ -13,7 +13,7 @@ The repository also includes a Python-based laboratory automation project that i
 4PL model/
 
 4PLmodel_for_Automated_ELISA_Analysis.ipynb
-4pl_elisa_results_automation_4pl.py
+4pl_elisa_results_automation.py
 generate_testset.py
 
 phase1/
@@ -36,9 +36,9 @@ validation.ipynb
 
 **4PL model/** — A Python-based laboratory automation tool that processes raw ELISA plate-reader exports and returns quantitative sample concentrations, alongside an automated quality-control (QC) report assessing assay validity.
 
-- '4pl_elisa_results_automation_4pl.py' - command-line script that loads an Excel plate export, fits a four-parameter logistic (4PL) calibration curve to the standard curve, back-calculates concentrations for all labeled samples, and generates a structured QC summary.
-- '4PLmodel_for_Automated_ELISA_Analysis.ipynb' - interactive notebook walking through the same workflow step by step, using simulated data, with inline explanations of each analytical decision.
-- generate_testset.py — generates a synthetic ELISA plate export (.xlsx) with known ground-truth calibration parameters, so the analysis pipeline can be tested and verified end-to-end without requiring real lab data.
+- ´4pl_elisa_results_automation.py´ - command-line script that loads an Excel plate export, fits a four-parameter logistic (4PL) calibration curve to the standard curve, back-calculates concentrations for all labeled samples, and generates a structured QC summary.
+- ´4PLmodel_for_Automated_ELISA_Analysis.ipynb´ - interactive notebook walking through the same workflow step by step, using simulated data, with inline explanations of each analytical decision.
+- ´generate_testset.py´ — generates a synthetic ELISA plate export (.xlsx) with known ground-truth calibration parameters, so the analysis pipeline can be tested and verified end-to-end without requiring real lab data.
 
 **What the workflow does**
 
@@ -49,11 +49,11 @@ Given a raw plate-reader Excel export, the script:
  - Fits a 4PL calibration curve to the standard curve using nonlinear least squares, and reports the fitted parameters (top/bottom asymptotes, slope, EC50) along with the curve's R².
  - Parses each sample label to extract the sample name, timepoint/type, and dilution factor (e.g. "A1 24h 100x" → sample A1, type 24h, dilution 100x), then back-calculates the concentration for each sample from its OD reading, correcting for dilution.
  - Evaluates the run against automated QC criteria, including:
- - Curve fit quality (R² threshold)
- - Standard recovery (how closely each standard's back-calculated concentration matches its known nominal value)
- - Duplicate precision (CV threshold, excluding near-zero-signal wells where CV is not meaningful)
- - Calibration range compliance — flags any sample whose concentration falls outside the tested standard curve range, including both unreadable (saturated) values and values that would require extrapolating beyond the highest tested standard
- - Outputs a structured QC summary (PASS / WARNING / FAIL per check, with an overall run status) alongside a CSV of all calculated results and a plot of the fitted calibration curve.
+     - Curve fit quality (R² threshold)
+     - Standard recovery (how closely each standard's back-calculated concentration matches its known nominal value)
+     - Duplicate precision (CV threshold, excluding near-zero-signal wells where CV is not meaningful)
+     - Calibration range compliance — flags any sample whose concentration falls outside the tested standard curve range, including both unreadable (saturated) values and values that would require extrapolating beyond the highest tested standard
+     - Outputs a structured QC summary (PASS / WARNING / FAIL per check, with an overall run status) alongside a CSV of all calculated results and a plot of the fitted calibration curve.
 
 **Design notes**
 
@@ -82,10 +82,6 @@ The corresponding results table includes each sample's parsed name, timepoint, d
 **Calibration Curve**
 
 <img width="790" height="489" alt="image" src="https://github.com/user-attachments/assets/2706fcc5-38c0-4323-9259-1dea8818d432" />
-
-**QC Raport from Notebook**
-
-<img width="550" height="239" alt="image" src="https://github.com/user-attachments/assets/41d51024-a111-4e32-9728-c8c2648de1d8" />
 
 ---
 
