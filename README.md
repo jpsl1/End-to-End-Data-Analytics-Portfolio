@@ -57,8 +57,22 @@ Given a raw plate-reader Excel export, the script:
 
 **Design notes**
 
- - The tool is built to be configurable rather than hardcoded — the OD channel, standard curve starting concentration, dilution factor, and number of standard points are all specified at runtime (via command-line arguments or interactive prompts), so the same script can be reused across different assay setups without editing the code.
+ - The tool is built to be configurable rather than hardcoded. The OD channel, standard curve starting concentration, dilution factor, and number of standard points are all specified at runtime (via command-line arguments or interactive prompts), so the same script can be reused across different assay setups without editing the code.
  - QC thresholds are intentionally conservative screening criteria (e.g. flagging standard recovery outside 75–125%) rather than definitive pass/fail acceptance limits. They are designed to flag runs for human review, not to make a final validity determination automatically.
+
+**Running the ELISA Analysis Script**
+Install dependencies: `pip install -r requirements.txt`
+
+ - Generate a synthetic test plate (optional, for trying the tool without real lab data):
+    - ```bash python generate_testset.py```
+    
+ - This creates `synthetic_elisa_plate.xlsx` in the current directory.
+ - Run the analysis:
+    - ```bash python 4pl_elisa_results_automation_.py synthetic_elisa_plate.xlsx --od-channel "OD(450) - OD(570)" --std-start 32 --dilution-factor 0.5 --num-standards 8```
+      
+ - Alternatively, run the script without arguments and it will prompt for each value interactively:
+    - ```bash python 4pl_elisa_results_automation_.py```
+ - The script will print curve-fit parameters, a full results table, and the QC summary to the console, save the calculated concentrations to a CSV file, and display the calibration curve plot.
 
 **Example Output:**
 
