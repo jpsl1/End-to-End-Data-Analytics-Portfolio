@@ -44,7 +44,7 @@ validation.ipynb
 
 Given a raw plate-reader Excel export, the script:
  - Locates and extracts the relevant OD channel from the plate export automatically, regardless of extra header rows or plate metadata surrounding the data block.
- - Identifies blank, standard, and control wells automatically by scanning well labels, rather than assuming a fixed plate layout — blank wells can appear in any position on the plate.
+ - Identifies blank, standard, and control wells automatically by scanning well labels, rather than assuming a fixed plate layout.
  - Blank-corrects all OD readings and averages duplicate measurements, calculating the coefficient of variation (CV) for each replicate pair as a precision check.
  - Fits a 4PL calibration curve to the standard curve using nonlinear least squares, and reports the fitted parameters (top/bottom asymptotes, slope, EC50) along with the curve's R².
  - Parses each sample label to extract the sample name, timepoint/type, and dilution factor (e.g. "A1 24h 100x" → sample A1, type 24h, dilution 100x), then back-calculates the concentration for each sample from its OD reading, correcting for dilution.
