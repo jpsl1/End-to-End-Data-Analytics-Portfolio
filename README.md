@@ -38,7 +38,7 @@ validation.ipynb
 
 - `4pl_elisa_results_automation.py` - command-line script that loads an Excel plate export, fits a four-parameter logistic (4PL) calibration curve to the standard curve, back-calculates concentrations for all labeled samples, and generates a structured QC summary.
 - `4PLmodel_for_Automated_ELISA_Analysis.ipynb`- interactive notebook walking through the same workflow step by step, using simulated data, with inline explanations of each analytical decision.
-- `generate_testset.pyt` — generates a synthetic ELISA plate export (.xlsx) with known ground-truth calibration parameters, so the analysis pipeline can be tested and verified end-to-end without requiring real lab data.
+- `generate_testset.py` — generates a synthetic ELISA plate export (.xlsx) with known ground-truth calibration parameters, so the analysis pipeline can be tested and verified end-to-end without requiring real lab data.
 
 **What the workflow does**
 
