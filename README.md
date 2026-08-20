@@ -107,7 +107,7 @@ The first phase establishes the methodology on a smaller dataset. The goal is to
 - Feature engineering and variable creation
 - Winsorization and log transformation to reduce skewness
 - Logistic Regression and XGBoost model development with hyperparameter tuning
-- Logistic Regression selected as final model for interpretability — each feature contribution is transparent and explainable
+- Logistic Regression selected as final model for interpretability so each feature contribution is transparent and explainable
 - Risk segmentation with expected loss estimation
 - Independent validation covering discriminatory power, calibration, model stability, and imputation sensitivity
 
