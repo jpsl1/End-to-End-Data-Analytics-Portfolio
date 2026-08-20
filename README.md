@@ -68,7 +68,7 @@ Install dependencies: `pip install -r requirements.txt`
     
  - This creates `synthetic_elisa_plate.xlsx` in the current directory.
  - Run the analysis:
-    - ```bash python 4pl_elisa_results_automation_.py synthetic_elisa_plate.xlsx --od-channel "OD(450) - OD(570)" --std-start 32 --dilution-factor 0.5 --num-standards 8```
+    - ```bash python 4pl_elisa_results_automation_.py synthetic_elisa_plate.xlsx --od-channel "OD(550)" --std-start 32 --dilution-factor 0.5 --num-standards 8```
       
  - Alternatively, run the script without arguments and it will prompt for each value interactively:
     - ```bash python 4pl_elisa_results_automation_.py```
