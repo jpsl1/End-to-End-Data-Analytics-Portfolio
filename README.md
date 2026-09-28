@@ -52,7 +52,7 @@ Given a raw plate-reader Excel export, the script:
      - Curve fit quality (R² threshold)
      - Standard recovery (how closely each standard's back-calculated concentration matches its known nominal value)
      - Duplicate precision (CV threshold, excluding near-zero-signal wells where CV is not meaningful)
-     - Calibration range compliance — flags any sample whose concentration falls outside the tested standard curve range, including both unreadable (saturated) values and values that would require extrapolating beyond the highest tested standard
+     - Calibration range compliance (flags any sample whose concentration falls outside the tested standard curve range, including both unreadable (saturated) values and values that would require extrapolating beyond the highest tested standard)
      - Outputs a structured QC summary (PASS / WARNING / FAIL per check, with an overall run status) alongside a CSV of all calculated results and a plot of the fitted calibration curve.
 
 **Design notes**
